@@ -1,5 +1,5 @@
 import type { User } from '../entities/user'
-import { type IGetUsersUseCase } from '../interfaces/get-users-use-case-interface'
+import type { IGetUsersUseCase } from '../interfaces/get-users-use-case-interface'
 import type { IUserRepository } from '../interfaces/user-repository-interface'
 
 export class GetUsersUseCase implements IGetUsersUseCase {
