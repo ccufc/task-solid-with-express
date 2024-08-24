@@ -1,5 +1,5 @@
-import type { IUserRepository } from '../interfaces/user-repository-interface'
-import type { User } from '../entities/user'
+import type { IUserRepository } from '@/interfaces/user-repository-interface'
+import type { User } from '@/entities/user'
 
 export class InMemoryUserRepository implements IUserRepository {
   private readonly users: User[] = []

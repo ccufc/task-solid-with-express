@@ -1,6 +1,6 @@
 import type { Response, Request } from 'express'
-import type { IGetUsersUseCase } from '../../interfaces/get-users-use-case-interface'
-import type { IGetUsersController } from '../../interfaces/get-users-controller-interface'
+import type { IGetUsersUseCase } from '@/interfaces/get-users-use-case-interface'
+import type { IGetUsersController } from '@/interfaces/get-users-controller-interface'
 
 export class GetUsersController implements IGetUsersController {
   constructor(private readonly getUsersUseCase: IGetUsersUseCase) {}

@@ -1,6 +1,6 @@
 import { CreateUserController } from './create-user-controller'
-import { CreateUserUsecase } from '../../use-case/create-user-use-case'
-import { InMemoryUserRepository } from '../../repositories/in-memory-user-repository'
+import { CreateUserUsecase } from '@/use-cases/create-user-use-case'
+import { InMemoryUserRepository } from '@/repositories/in-memory-user-repository'
 
 const inMemoryUserRepository = new InMemoryUserRepository()
 const createUserUsecase = new CreateUserUsecase(inMemoryUserRepository)

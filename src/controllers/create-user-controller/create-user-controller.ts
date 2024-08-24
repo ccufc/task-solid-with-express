@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express'
-import type { ICreateUserController } from '../../interfaces/create-user-controller-interface'
-import type { ICreateUserUseCase } from '../../interfaces/create-user-use-case-interface'
-import { User } from '../../entities/user'
+import type { ICreateUserController } from '@/interfaces/create-user-controller-interface'
+import type { ICreateUserUseCase } from '@/interfaces/create-user-use-case-interface'
+import { User } from '@/entities/user'
 
 export class CreateUserController implements ICreateUserController {
   constructor(private readonly createUserUseCase: ICreateUserUseCase) {}

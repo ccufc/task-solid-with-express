@@ -15,4 +15,5 @@ router.post('/user', async (request, response) => {
 router.get('/user', async (request, response) => {
   await getUsersController.handle(request, response)
 })
+
 export default router
