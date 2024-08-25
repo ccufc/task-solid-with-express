@@ -1,0 +1,15 @@
+@URL = http://localhost:3000
+
+GET {{URL}}
+
+GET {{URL}}/user
+
+POST {{URL}}/user
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "age": 19
+}
