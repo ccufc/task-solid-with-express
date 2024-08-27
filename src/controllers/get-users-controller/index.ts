@@ -1,9 +1,9 @@
 import { GetUsersController } from './get-users-controller'
 import { GetUsersUseCase } from '@/use-cases/get-users-use-case'
-import { InMemoryUserRepository } from '@/repositories/in-memory-user-repository'
+import { SqliteUserRepository } from '@/repositories/sqlite-user-repository'
 
-const inMemoryUserRepository = new InMemoryUserRepository()
-const getUsersUseCase = new GetUsersUseCase(inMemoryUserRepository)
+const sqliteUserRepository = new SqliteUserRepository()
+const getUsersUseCase = new GetUsersUseCase(sqliteUserRepository)
 const getUsersController = new GetUsersController(getUsersUseCase)
 
 export default getUsersController

@@ -1,9 +1,9 @@
 import { CreateUserController } from './create-user-controller'
 import { CreateUserUsecase } from '@/use-cases/create-user-use-case'
-import { InMemoryUserRepository } from '@/repositories/in-memory-user-repository'
+import { SqliteUserRepository } from '@/repositories/sqlite-user-repository'
 
-const inMemoryUserRepository = new InMemoryUserRepository()
-const createUserUsecase = new CreateUserUsecase(inMemoryUserRepository)
+const sqliteUserRepository = new SqliteUserRepository()
+const createUserUsecase = new CreateUserUsecase(sqliteUserRepository)
 const createUserController = new CreateUserController(createUserUsecase)
 
 export default createUserController
