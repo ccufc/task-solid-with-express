@@ -2,7 +2,11 @@
 
 GET {{URL}}
 
+###
+
 GET {{URL}}/user
+
+###
 
 POST {{URL}}/user
 Content-Type: application/json
