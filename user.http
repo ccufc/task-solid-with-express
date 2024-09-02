@@ -2,14 +2,18 @@
 
 GET {{URL}}
 
+###
+
 GET {{URL}}/user
+
+###
 
 POST {{URL}}/user
 Content-Type: application/json
 
 {
   "id": 1,
-  "name": "John Doe",
-  "email": "johndoe@example.com",
+  "name": "Marie Doe",
+  "email": "mariedoe@example.com",
   "age": 19
 }

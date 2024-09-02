@@ -9,6 +9,11 @@
     "sourceType": "module"
   },
   "rules": {
-    "@typescript-eslint/no-misused-promises": "off"
+    "no-var": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/no-extraneous-class": "off",
+    "@typescript-eslint/no-empty-interface": "off"
   }
 }
