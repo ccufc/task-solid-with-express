@@ -1,5 +1,6 @@
-import { type IUserRepository } from '@/interfaces/user-repository-interface'
+import type { IUserRepository } from '@/interfaces/user-repository-interface'
 import { User } from '@/entities/user'
+import prisma from '@/database/prisma'
 
 export class SqliteUserRepository implements IUserRepository {
   public async create(user: User): Promise<void> {
